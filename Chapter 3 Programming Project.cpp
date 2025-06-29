@@ -5,6 +5,37 @@
 
 int main()
 {
+    
+    double Ncookies;
+
+    std::cout << "How many cookies would you like to make?";
+    std::cin >> Ncookies;
+
+    double ratio = Ncookies / 48;
+
+    double sugar = 1.5 * ratio;
+    double flour = ratio;
+    double butter = 2.75 * ratio;
+
+   std:: cout << "To bake " << Ncookies << " cookies, you need " << sugar << " cups of sugar, " << flour << " cups of flour, and " << butter << " cups of buter. \n";
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    return 0;
     std::cout << "Hello World!\n";
 }
 
