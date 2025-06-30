@@ -13,13 +13,13 @@ int main()
     double prin;
 
     std::cout << "Choose a savings account balance.";
-    std::cin >> prin;
+    std::cin >> prin;//their account balance
 
 
     double rate;
 
     std::cout << "What is the interest rate?";
-    std::cin >> rate;
+    std::cin >> rate;//has to be put as percent without converting to decimal. 
 
 
     double comp;
@@ -28,7 +28,7 @@ int main()
     std::cin >> comp;
 
 
-    double amount = prin * pow(1 + ((rate/100) / comp), comp);
+    double amount = prin * pow(1 + ((rate/100) / comp), comp);//I converted the rate into the decimal here
 
 
         std::cout << "Interest Rate:                  "<<rate<<"%\n";
