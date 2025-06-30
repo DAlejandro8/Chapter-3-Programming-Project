@@ -5,7 +5,51 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+  
+
+
+
+    double prin;
+
+    std::cout << "Choose a savings account balance.";
+    std::cin >> prin;
+
+
+    double rate;
+
+    std::cout << "What is the interest rate?";
+    std::cin >> rate;
+
+
+    double comp;
+
+    std::cout << "Times the interest is compounded during the year?";
+    std::cin >> comp;
+
+
+    double amount = prin * pow(1 + ((rate/100) / comp), comp);
+
+
+        std::cout << "Interest Rate:                  "<<rate<<"%\n";
+        std::cout << "Times Compounded:               " << comp << std::endl;
+        std::cout << "Principal:                     $" << prin << std::endl;
+        std::cout << "Interest:                      $" << amount-prin << std::endl;
+        std::cout << "Amount in Savings:             $" << amount << std::endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
