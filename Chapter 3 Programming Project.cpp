@@ -3,37 +3,39 @@
 
 #include <iostream>
 #include <random>
+using namespace std;
 
 int main()
 {
     
     std::random_device first;
-    std::uniform_real_distribution<int> randomReal(0.0, 500);
+    std::uniform_int_distribution<int> randomReal(0, 100);
+    std::random_device second;
+
+    int one = randomReal(first);//first generated number
+    int two = randomReal(second);//second generated number
+    int total = one + two;//
+  
+    std::cout << one << "+" << two << std::endl;//question
+   
+
+
+    std::cout<< "Press enter to check your answer.\n";
+    
 
 
 
 
+        std::cin.get();
 
 
 
-    double Ncookies;
-
-    std::cout << "How many cookies would you like to make?";
-    std::cin >> Ncookies;
-
-    double ratio = Ncookies / 48;
-
-    double sugar = 1.5 * ratio;
-    double flour = ratio;
-    double butter = 2.75 * ratio;
-
-    std::cout << "To bake " << Ncookies << " cookies, you need " << sugar << " cups of sugar, " << flour << " cups of flour, and " << butter << " cups of buter. \n";
+  
+    std::cout << one << "+" << two << "=" <<total<<std::endl;//answer to problem and full question
 
 
 
-
-
-
+    return 0;
 }
 
 
